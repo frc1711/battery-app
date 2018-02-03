@@ -1,10 +1,10 @@
-import { Hero } from './hero';
+import { Battery } from './batteries';
 
-export const HEROES: Hero[] = [
-  { id: 11, name: 'Fat Stacks' },
-  { id: 12, name: 'Bagel' },
-  { id: 13, name: 'Sceince' },
-  { id: 14, name: 'Banannie' },
+export const BATTERIES: Battery[] = [
+  { id: 11, name: 'Mr. Nice', charge:10 },
+  { id: 12, name: 'Narco' },
+  { id: 13, name: 'Bombasto' },
+  { id: 14, name: 'Celeritas' },
   { id: 15, name: 'Magneta' },
   { id: 16, name: 'RubberMan' },
   { id: 17, name: 'Dynama' },
