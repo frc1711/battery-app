@@ -1,0 +1,21 @@
+<h2>Batteries</h2>
+
+<div>
+  <label>Battery name:
+    <input #batteryName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(batteryName.value); batteryName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="batteries">
+  <li *ngFor="let battery of batteries">
+    <a routerLink="/detail/{{battery.id}}">
+      <span class="badge">{{battery.id}}</span> {{battery.name}}
+    </a>
+    <button class="delete" title="delete battery"
+    (click)="delete(battery)">x</button>
+  </li>
+</ul>
