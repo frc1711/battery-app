@@ -1,10 +1,37 @@
 <div *ngIf="battery">
   <h2>{{ battery.name | uppercase }} Details</h2>
   <div><span>id: </span>{{battery.id}}</div>
-  <div>
-    <label>name:
+  <div> 
+    <label>Name:
       <input [(ngModel)]="battery.name" placeholder="name"/>
     </label>
+  </div>
+  <div>
+  	<label>Charge:
+  		<input [(ngModel)]="battery.charge" placeholder="0"/>
+  	</label>
+  </div>
+  <div>
+  	<label>Charging:
+   		<input [(ngModel)]="battery.charging" type = "checkbox" class = "theBox"/>
+  	</label>
+  </div>
+  <div>
+  	<label>Health:
+  		<input [(ngModel)]="battery.health" placeholder="0"/>
+  	</label>
+  </div>
+  <div><label>Being-used:
+  		<input [(ngModel)]="battery.use" type = "checkbox" class = "theBox"/>
+  	</label>
+  </div>
+  <div><label>Resistance:
+  		<input [(ngModel)]="battery.resistance" placeholder="0"/>
+  	</label>
+  </div>
+  <div><label>Voltage: 
+  		<input [(ngModel)]="battery.voltage" placeholder = "0"/>
+  	</label>
   </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
