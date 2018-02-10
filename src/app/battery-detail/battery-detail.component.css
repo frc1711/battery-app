@@ -1,7 +1,7 @@
 /* BatteryDetailComponent's private CSS styles */
 label {
   display: inline-block;
-  width: 3em;
+  width: 6em;
   margin: .5em 0;
   color: #607D8B;
   font-weight: bold;
@@ -27,4 +27,12 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+.theBox { 
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 25px;
+  background-color: #eee;
+  display: inline;
 }
