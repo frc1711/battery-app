@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+//Referenced only in app.component.html (useless?)
 export class AppComponent {
-  title = 'Batteries';
+  title = 'Battery App';
 }
