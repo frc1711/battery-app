@@ -9,7 +9,7 @@
     add
   </button>
 </div>
-
+<!--Creates battery class and retrieves a list that is ranked by battery id. (Click) deletes batteries.-->
 <ul class="batteries">
   <li *ngFor="let battery of batteries">
     <a routerLink="/detail/{{battery.id}}">
