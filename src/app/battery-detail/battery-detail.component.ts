@@ -4,7 +4,7 @@ import { Location } from '@angular/common';
 
 import { Battery }         from '../battery';
 import { BatteryService }  from '../battery.service';
-
+//import { }
 @Component({
   selector: 'app-battery-detail',
   templateUrl: './battery-detail.component.html',
@@ -22,7 +22,7 @@ export class BatteryDetailComponent implements OnInit {
   ngOnInit(): void {
     this.getBattery();
   }
-
+  //Retrieves batteries and their information 
   getBattery(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.batteryService.getBattery(id)
