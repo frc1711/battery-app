@@ -15,9 +15,9 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
     this.getBatteries();
   }
-
+  //This retrieves the first three batteries (I think.)
   getBatteries(): void {
     this.batteryService.getBatteries()
-      .subscribe(batteries => this.batteries = batteries.slice(1, 5));
+      .subscribe(batteries => this.batteries = batteries.slice(1, 5)); 
   }
 }
