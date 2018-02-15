@@ -16,6 +16,7 @@ import { BatteryService } from '../battery.service';
   templateUrl: './battery-search.component.html',
   styleUrls: [ './battery-search.component.css' ]
 })
+
 export class BatterySearchComponent implements OnInit {
   batteries$: Observable<Battery[]>;
   private searchTerms = new Subject<string>();
