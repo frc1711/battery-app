@@ -16,12 +16,12 @@ export class BatteriesComponent implements OnInit {
   ngOnInit() {
     this.getBatteries();
   }
-
+  //retrieves batteries
   getBatteries(): void {
     this.batteryService.getBatteries()
     .subscribe(batteries => this.batteries = batteries);
   }
-
+  //creates battery on list
   add(name: string): void {
     name = name.trim();
     if (!name) { return; }
@@ -30,7 +30,7 @@ export class BatteriesComponent implements OnInit {
         this.batteries.push(battery);
       });
   }
-
+  //deletes selected battery
   delete(battery: Battery): void {
     this.batteries = this.batteries.filter(h => h !== battery);
     this.batteryService.deleteBattery(battery).subscribe();
