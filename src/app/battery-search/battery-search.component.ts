@@ -18,6 +18,7 @@ import { BatteryService } from '../battery.service';
 })
 
 export class BatterySearchComponent implements OnInit {
+  //batteries is observable, not array
   batteries$: Observable<Battery[]>;
   private searchTerms = new Subject<string>();
 
