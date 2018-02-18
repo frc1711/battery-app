@@ -11,6 +11,12 @@ input {
   font-size: 1em;
   padding-left: .4em;
 }
+h2 {
+  color: #ED8600;
+}
+label {
+  color: #ffffff;
+}
 button {
   margin-top: 20px;
   font-family: Arial;
@@ -27,6 +33,9 @@ button:disabled {
   background-color: #eee;
   color: #ccc;
   cursor: auto;
+}
+#the-number-boi {
+  color: #ED8600;
 }
 .theBox { 
   top: 0;
