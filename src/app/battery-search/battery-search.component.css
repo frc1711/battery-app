@@ -1,4 +1,7 @@
 /* BatterySearch private styles */
+h4 {
+  color: #68b04d;
+}
 .search-result li {
   border-bottom: 1px solid gray;
   border-left: 1px solid gray;
