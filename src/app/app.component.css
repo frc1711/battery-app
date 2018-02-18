@@ -1,7 +1,7 @@
 /* AppComponent's private CSS styles */
 h1 {
   font-size: 1.2em;
-  color: #999;
+  color: #68b04d;
   margin-bottom: 0;
 }
 h2 {
@@ -26,4 +26,7 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
+}
+body {
+  background-color: #666666;
 }
